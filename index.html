@@ -1,81 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet"
-        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
-  <style>
-
-    img {
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Mockup Assignment Part 1- SpringBoard 13.2.23</title>
+    <!-- Cache control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- highlight.js -->    
+    <link rel="stylesheet" href="highlight/highlight.css">
+    <script src="highlight/highlight.js"></script>
+</head>
+<body class="m-2">
+    <ul class="nav nav-pills mb-3" id="tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="part-1-tab" data-toggle="pill" href="#part-1" role="tab" aria-controls="part-1" aria-selected="false">Part 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="part-2-tab" data-toggle="pill" href="#part-2" role="tab" aria-controls="part-2" aria-selected="false">Part 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="part-1-source-tab" data-toggle="pill" href="#part-1-source" role="tab" aria-controls="part-1" aria-selected="false">Part 1 Source</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="part-2-source-tab" data-toggle="pill" href="#part-2-source" role="tab" aria-controls="part-2" aria-selected="false">Part 2 Source</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container">
+                <div class="jumbotron" style="font-size: 20pt">
+                    This assignment includes 2 projects. There are tabs (pills, actually) leading to said projects.<br />
+                    You can also view the source using either the tabs or by visiting the github.<br /><br />
+                    <span id="github" class="btn-primary text-white justify-content-center">
+                        <img src="./Octocats/Octocat.png" height="40"/>
+                        <a href="https://github.com/ericbroome/SpringBoard_13.1.14-jQuery" target="_blank" 
+                            style="font-size: 1.8rem; text-decoration: none" class="px-4 py-2 text-white">GitHub Source</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="part-1" role="tabpanel" aria-labelledby=part-1-tab">
+            <div id="i2" class="container-fluid">
+                <iframe width="100%" height="1200" src="part-1-jquery/index.html"></iframe>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="part-2" role="tabpanel" aria-labelledby="part-2-tab">
+            <div id="i2" class="container-fluid">
+                <iframe width="100%" height="1200" src="part-2-movies/index.html"></iframe>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="part-1-source" role="tabpanel" aria-labelledby=part-1-source-tab">
+            <h3>HTML</h3>
+            <div class="code-block">
+                <pre>
+                    <code class="html">
+<!-- EVERYTHING AFTER THIS IS COPIED AND PASTED TEXT EXCEPT FOR SOME INCLUDES AT THE BOTTOM OF BODY AND A CALL TO A METHOD TO PERFORM HIGHLIGHTING -->                        
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Simple jQuery Assignment - SpringBoard_13.1.14&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"&gt;
+    &lt;style&gt;
+      img {
       max-width: 70%;
-    }
-
-    .image-center {
+      }
+      .image-center {
       display: block;
       margin: 10px auto;
-    }
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;h1 id="title" class="text-center"&gt;Welcome to my website.&lt;/h1&gt;
+      &lt;div class="row"&gt;
+        &lt;article class="col-sm-8"&gt;
+          &lt;p&gt;My website is very important because I have many important things
+          to say. Here is a picture of a puppy in a cup: &lt;/p&gt;
+          &lt;img src="pup-in-cup.jpg" alt="Puppy in Cup"&gt;
+          &lt;p&gt;Here are some more thoughts: Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Cum harum labore veritatis, possimus
+          facilis quas repellat, explicabo, ad commodi ipsum quidem nostrum
+          earum pariatur fugit! Magni sunt nulla impedit! Facilis.&lt;/p&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, natus
+          qui nostrum libero atque hic distinctio sint facilis nihil possimus
+          tenetur deserunt rerum laboriosam cum quisuam doloremque ducimus
+          error.&lt;/p&gt;
+          &lt;p&gt;Rerum debitis aspernatur, ipsum animi! Quis ullam dolore blanditiis
+          accusantium eius minus tempore, iure maxime similique vel! Possimus
+          reprehenderit autem, recusandae quos laudantium nesciunt libero suscipit
+          officia rerum, et.&lt;/p&gt;
+          &lt;p&gt;Aliquam harum at soluta id esse perspiciatis, nesciunt corporis nostrum
+          commodi, dolorum, repellat possimus a cumque. Id sed explicabo, quaerat
+          sit esse facere, voluptatem, odit nesciunt eveniet assumenda, error!&lt;/p&gt;
+          &lt;p&gt;Consequuntur porro, nobis placeat, labore magni aliquam repellendus
+          consequatur hic facere, molestiae dolorum suscipit quos sint, minima
+          Quibusdam voluptatem est hic, corporis. Officiis delectus, consectetur
+          harum reiciendis perferendis.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;aside class="col-sm-4"&gt;
+          &lt;h4&gt;I love lists. Here's why.&lt;/h4&gt;
+          &lt;ol&gt;
+            &lt;li&gt;Sometimes they're numbered, and numbers are great.&lt;/li&gt;
+            &lt;li&gt;Sometimes they're not, and that's okay too.&lt;/li&gt;
+            &lt;li&gt;I don't have the attention span to read paragraphs.&lt;/li&gt;
+            &lt;li&gt;Hey look, there's a puppy!&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/aside&gt;
+      &lt;/div&gt;
+      &lt;div class="row mb-5"&gt;
+        &lt;div class="col-sm-4"&gt;
+          Red
+          &lt;input class="form-control" type="number" min="0" max="255" value="255"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-4"&gt;
+          Blue
+          &lt;input class="form-control" type="number" min="0" max="255" value="255"&gt;
+        &lt;/div&gt;
+          &lt;div class="col-sm-4"&gt;
+          Green
+          &lt;input class="form-control" type="number" min="0" max="255" value="255"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.3.1.js"&gt;&lt;/script&gt;
+    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+      $(()=&gt; {  //Ok to use arrow as this will be window anyway
+        console.log("Let's get ready to party with jQuery!");
+        $('article &gt; img').each((index, el)=&gt;el.classList.add(".image-center"));
+        $('img').click((event)=&gt;$(event.target).remove());
+        $('p').last().remove();
+        $('title').css("font-size", Math.random() * 101);
+        $('ol')[0].append('li');
+        $('ol').html("This is a new list item");
+        $('aside').html("&lt;p&gt;We're sorry for wasting your time with the silly content which was previsouly found in this aside&lt;/p&gt;");
+        $('input').each(function(index, el) {
+          $(el).on('input', (event)=&gt;{
+            let clr = [];
+            $('input').each(function(index, elInput) {
+              clr[index] = +($(elInput).val());
+            });
+            $('body').css('background-color', `rgb(${clr[0]},${clr[2]},${clr[1]})`);  //Can't spread into a template literal
+          });
+        });
+      })
+    &lt;/script&gt;
+  &lt;/body&gt;
 
-  </style>
-</head>
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="part-2-source" role="tabpanel" aria-labelledby="part-2-source-tab">
+            <h3>HTML</h3>
+            <div class="code-block">
+                <pre>
+                    <code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;title&gt;jQuery Movie Rating- SpringBoard 13.1.14&lt;/title&gt;
+    &lt;!-- Cache control --&gt;
+    &lt;meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /&gt;
+    &lt;meta http-equiv="Pragma" content="no-cache" /&gt;
+    &lt;meta http-equiv="Expires" content="0" /&gt;
+    &lt;!-- Bootstrap CSS file --&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;div id="jumbo" class="jumbotron bg-info"&gt;
+        &lt;h1 id="title" class="text-center text-white"&gt;Movie Rating&lt;/h1&gt;
+        &lt;form id="theForm" onsubmit="return false"&gt;
+            &lt;div class="form-row d-flex justify-content-center align-items-center"&gt;
+            &lt;div class="form-group col-3"&gt;
+                &lt;label for="movie"&gt;Title&lt;/label&gt;
+                &lt;input id="movie" type="text" class="form-control" placeholder="Enter a title" title="Enter the title of a movie"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group col-3"&gt;
+                &lt;label for="rating"&gt;Rating&lt;/label&gt;
+                &lt;input id="rating" type="number" min="0" max="10" value=0 class="form-control" title="Enter a number between 0 and 10"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group col-3"&gt;
+                &lt;label for="addEntry" style="color:transparent"&gt;Click below to add&lt;/label&gt; &lt;!-- A shim to force proper verical spacing in this form --&gt;
+                &lt;button id="addEntry" class="form-control btn btn-primary text-white"&gt;Insert&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+        &lt;div class="row justify-content-center align-items-center bg-dark text-white"&gt;
+            &lt;div class="col-3 bg-dark text-white text-center"&gt;&lt;strong&gt;Title &lt;i id="sortTitle" class="fas fa-sort"&gt;&lt;/i&gt;&lt;/strong&gt;&lt;/div&gt;
+            &lt;div class="col-3 bg-dark text-white text-center"&gt;&lt;strong&gt;Rating &lt;i id="sortRating" class="fas fa-sort"&gt;&lt;/i&gt;&lt;/strong&gt;&lt;/div&gt;
+            &lt;div class="col-3 bg-dark text-white text-center"&gt;&lt;strong&gt;&lt;button id="deleteAll" class="btn btn-danger text-white"&gt;Delete All&lt;/strong&gt;&lt;/button&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="movieGrid"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.3.1.js"&gt;&lt;/script&gt;
+    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+            <h3>JS</h3>
+            <div class="code-block">
+                <pre>
+                    <code class="javascript">
+const movieList = [];           //Use this to store movie entries
+let sortBy = 0;                 //0 = no sort, 1/-1 = title, 2/-2 = rating
+let rtIndex = 0;                //Used for alternating colors of items
+let cellTemplates = [
+    '&lt;div class="col-3 text-center"&gt;',
+    '&lt;div class="col-3 text-center text-red" onclick="deleteMe(event)"&gt;&lt;i class="fas fa-trash"&gt;&lt;/i&gt;',
+];
+let rowTemplates = [
+    '&lt;div class="row justify-content-center text-white" style="background-color: rgba(127, 127, 127, 0.5)"&gt;',
+    '&lt;div class="row justify-content-center text-white" style="background-color: rgba(127, 127, 127, 0.25)"&gt;'
+];
 
-<body>
-<div class="container">
-  <h1 id="title" class="text-center">Welcome to my website.</h1>
-  <div class="row">
-    <article class="col-sm-8">
-      <p>My website is very important because I have many important things
-        to say. Here is a picture of a puppy in a cup: </p>
-      <img src="pup-in-cup.jpg" alt="Puppy in Cup">
-      <p>Here are some more thoughts: Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Cum harum labore veritatis, possimus
-        facilis quas repellat, explicabo, ad commodi ipsum quidem nostrum
-        earum pariatur fugit! Magni sunt nulla impedit! Facilis.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, natus
-        qui nostrum libero atque hic distinctio sint facilis nihil possimus
-        tenetur deserunt rerum laboriosam cum quisuam doloremque ducimus
-        error.</p>
-      <p>Rerum debitis aspernatur, ipsum animi! Quis ullam dolore blanditiis
-        accusantium eius minus tempore, iure maxime similique vel! Possimus
-        reprehenderit autem, recusandae quos laudantium nesciunt libero suscipit
-        officia rerum, et.</p>
-      <p>Aliquam harum at soluta id esse perspiciatis, nesciunt corporis nostrum
-        commodi, dolorum, repellat possimus a cumque. Id sed explicabo, quaerat
-        sit esse facere, voluptatem, odit nesciunt eveniet assumenda, error!</p>
-      <p>Consequuntur porro, nobis placeat, labore magni aliquam repellendus
-        consequatur hic facere, molestiae dolorum suscipit quos sint, minima
-        Quibusdam voluptatem est hic, corporis. Officiis delectus, consectetur
-        harum reiciendis perferendis.</p>
-    </article>
-    <aside class="col-sm-4">
-      <h4>I love lists. Here's why.</h4>
-      <ol>
-        <li>Sometimes they're numbered, and numbers are great.</li>
-        <li>Sometimes they're not, and that's okay too.</li>
-        <li>I don't have the attention span to read paragraphs.</li>
-        <li>Hey look, there's a puppy!</li>
-      </ol>
-    </aside>
-  </div>
-  <div class="row mb-5">
-    <div class="col-sm-4">
-      Red
-      <input class="form-control" type="number" min="0" max="255" value="255">
-    </div>
-    <div class="col-sm-4">
-      Blue
-      <input class="form-control" type="number" min="0" max="255" value="255">
-    </div>
-    <div class="col-sm-4">
-      Green
-      <input class="form-control" type="number" min="0" max="255" value="255">
-    </div>
-  </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script>
-  // Add your code here!
-</script>
+const addRowToUI = function(title, rating, index) {
+    let $row = $(`${rowTemplates[rtIndex]}&lt;/div&gt;`);
+    let $cell0 =  $(`${cellTemplates[0]}${title}&lt;/div&gt;`);
+    let $cell1 =  $(`${cellTemplates[0]}${rating}&lt;/div&gt;`);
+    let $cell2 =  $(`${cellTemplates[1]}&lt;/div&gt;`);
+    $row.attr('data-index', `${index}`);    //The index into the array
+    $row.appendTo('#movieGrid');
+    $cell0.appendTo($row);
+    $cell1.appendTo($row);
+    $cell2.appendTo($row);
+    rtIndex++;
+if(rtIndex >= rowTemplates.length)rtIndex = 0;
+}
+
+const updateUI = function() {
+    $('#movieGrid').html("");   //Clear the UI
+    let index = 0;
+    movieList.forEach((item) => {
+        addRowToUI(item.title, item.rating, index++);
+    })
+}
+
+//Respond to the trash icon
+const deleteMe = function(event) {
+    //First, find the item in each of the maps and delete those entries
+    //Finally, update the UI. No matter what, the sort order will not change.
+    let $item = $(event.currentTarget.parentElement);
+    let index = +($item.attr('data-index'));
+    movieList.splice(index, 1);
+    //Just update the whole UI rather than updating individual entrie's data-row-index attribute
+    updateUI();
+}
+
+const compareRating = function(a, b) {
+    return a.rating - b-rating;
+}
+
+const compareTitle = function(a, b) {
+    return String(a.title).localeCompare(b.title);
+}
+
+/* The equivalent of onDOMContentLoaded */      
+$(()=>{
+    //Event handler for the Insert button
+    $('#addEntry').click((e)=>{
+        let strTitle = $('#movie').val();
+        let lcTitle = strTitle.toLowerCase().replaceAll(' ', '');   //.replace(/\s/g, '') is the regex way
+        let nRating = +($('#rating').val());
+        let bFail = false;
+        movieList.forEach(function(entry) { //Prevent duplicate names, mostly.
+            if(entry.title.toLowerCase().replaceAll(' ', '') == lcTitle) {
+                bFail = true;
+                return;
+            }
+        });
+        if(bFail)return;
+        addRowToUI(strTitle, nRating, movieList.length);  //In this order such that the row index of the html element is accurate
+        movieList.push({title:strTitle, rating:nRating});
+        $('#movie').val("");
+        $('#rating').val(0);
+        $('#movie').focus();
+    });
+
+    //Event handler for rating input - force it to be 0-10 because manually typing is not constrained by min and max
+    $('#rating').on('input', (e) => {
+            if($('#rating').val() > 10)$('#rating').val(10);
+        });
+
+    //Event handler for sort title button
+    $('#sortTitle').click((e) => {
+        movieList.sort(compareTitle);
+        if(sortBy != -1) {
+            movieList.reverse();
+            sortBy = -1;
+        }
+        else sortBy = 1;
+        updateUI();
+    })
+
+    //Event handler for sort rating button
+    $('#sortRating').click((e) => {
+        movieList.sort(compareRating);
+        if(sortBy != -2) {
+            movieList.reverse();
+            sortBy = -2;
+        }
+        else sortBy = 2;
+        updateUI();
+    })
+
+    //Event handler for delete all button
+    $('#deleteAll').click((e) => {
+        movieList.length = 0;
+        updateUI();
+    })
+
+});                        
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>  
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
-
 </html>
