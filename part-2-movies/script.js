@@ -56,6 +56,7 @@ $(()=>{
     //Event handler for the Insert button
     $('#addEntry').click((e)=>{
         let strTitle = $('#movie').val();
+        if(strTitle.length < 2)return;
         let lcTitle = strTitle.toLowerCase().replaceAll(' ', '');   //.replace(/\s/g, '') is the regex way
         let nRating = +($('#rating').val());
         let bFail = false;
